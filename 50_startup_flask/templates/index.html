@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Profit Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #333; /* Dark background color */
+            color: #fff; /* Light text color */
+        }
+        h1 {
+            color: #66b3ff; /* Light blue color for heading */
+            padding: 20px;
+        }
+        form {
+            background-color: #444; /* Slightly darker background */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin: 20px auto;
+            width: 80%;
+            max-width: 400px;
+        }
+        p {
+            margin: 10px 0;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #666; /* Darker border */
+            border-radius: 3px;
+            background-color: #555; /* Slightly darker background for inputs */
+            color: #fff; /* Light text color */
+            box-sizing: border-box; /* Corrects box model */
+        }
+        select {
+            height: 34px;
+            background-color: #555; /* Slightly darker background for the select */
+            color: #fff; /* Light text color */
+            padding: 0 10px; /* Adds padding to the select text */
+        }
+        input[type="submit"] {
+            background-color: #66b3ff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        h2 {
+            color: #66b3ff; /* Light blue color for results */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Startup Profit Prediction</h1>
+    <form action="/login" method="post">
+        <p>R&D Spend</p>
+        <input type="text" name="rd">
+
+        <p>Administration</p>
+        <input type="text" name="as">
+
+        <p>Marketing Spend</p>
+        <input type="text" name="ms">
+
+        <label for="states">Choose the state</label>
+        <select name="s">
+            <option value="cal">California</option>
+            <option value="flo">Florida</option>
+            <option value="ny">New York</option>
+        </select>
+
+        <p><input type="submit" value="Submit"></p>
+
+        <h2><b>{{y}}</b></h2>
+    </form>
+</body>
+</html>
+
